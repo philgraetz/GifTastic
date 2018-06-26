@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifTastic</title>
+
+    <!-- Bootstrap CSS - place in head BEFORE your CSS pages -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- Customizing CSS for this project -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container p-2" id="control-container">
+        <!-- Page Title -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="page-title" class="text-center">GifTastic GIFs</h1>
+            </div>
+        </div>
+
+        <!-- GIF Buttons -->
+        <div class="row mb-2">
+            <div class="col-md-12" id="topic-buttons-div">
+            </div>
+        </div>
+
+        <!-- Options -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group mb-2" id="input-group-div">
+                    <input type="text" id="new-topic-input" class="form-control" placeholder="New Topic" aria-label="Recipient's username" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-xs" type="button" id="new-topic-button">Add</button>
+                    </div>
+                    <div class="input-group-append mx-2">
+                        <div class="input-group-text">
+                            <input type="checkbox" id="accumulate-checkbox" aria-label="Checkbox">
+                            <label for="accumulate-checkbox" class="pl-2">Accumulate Images</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-xs" id="clear-images-button">Clear All Images</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <img src="assets/Images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-2" id="gif-container">
+        <!-- JS will add rows and columns of gif elements here -->
+
+    </div>
+
+    <!-- Bootstrap JS (from getbootstrap.com) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- AJAX JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- GifTastic JS -->
+    <script src="assets/javascript/giftastic.js"></script>
+    <script>
+        $(document).ready(documentReady);
+    </script>
+</body>
+
+</html>
