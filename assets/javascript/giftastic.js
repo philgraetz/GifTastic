@@ -194,7 +194,7 @@ function GifTasticControl() {
         let searchType = "search"; // search random trending
         let rating = "";
     
-        let apiKey = "diQytfx0tRHfkZKJnk4YYALWCxXhElqG"; // My key
+        let apiKey = "XXXX"; // My key
         let pathHash = {
             search   : "/v1/gifs/search",
             trending : "/v1/gifs/trending",
